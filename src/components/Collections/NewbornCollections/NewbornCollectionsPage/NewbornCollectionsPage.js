@@ -1,18 +1,17 @@
 import React from 'react';
-import './MensCollectionsPage.css';
+import './NewbornCollectionsPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faHeart, faBars, faCartPlus, faThLarge, faList } from '@fortawesome/free-solid-svg-icons';
 import collectionsData from '../../../../fakeData/collectionsData';
 import { useHistory } from 'react-router-dom';
-const MensCollectionsPage = () => {
-
-    const {location: {pathname} } = useHistory();
+const NewbornCollectionsPage = () => {
+    const { location: { pathname } } = useHistory();
     const filterData = collectionsData.filter(data => data.type === pathname);
     return (
-        <div className="mens-collection-page">
+        <div className="newborn-collection-page">
             <div className="row">
                 <div className="main-title">
-                    <h1>MENS COLLECTIONS</h1>
+                    <h1>NEWBORN COLLECTIONS</h1>
                     <hr />
                 </div>
                 <div className="col-md-3 title">
@@ -78,4 +77,4 @@ const MensCollectionsPage = () => {
     );
 };
 
-export default MensCollectionsPage;
+export default NewbornCollectionsPage;

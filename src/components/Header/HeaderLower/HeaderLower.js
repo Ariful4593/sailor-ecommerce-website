@@ -40,10 +40,10 @@ const HeaderLower = () => {
                 <div className="col-12 header-low-ul" id="header-one">
                     <ul className="">
                         <li><a href="/">CRAZY DEALS</a></li>
-                        <li><Link to="/crazy-mens-collections">MEN</Link></li>
-                        <li><Link to="/crazy-womens-collections">WOMEN</Link></li>
-                        <li><a href="/">KIDS</a></li>
-                        <li><a href="/">NEWBORN</a></li>
+                        <li><Link to="/mens">MEN</Link></li>
+                    <li><Link to="/womens">WOMEN</Link></li>
+                        <li><Link to="/kids">KIDS</Link></li>
+                        <li><Link to="/newborn">NEWBORN</Link></li>
                     </ul>
                 </div>
                 <div className="col-12 header-low-ul" id="nav-icon-area">

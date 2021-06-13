@@ -1,9 +1,13 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faHeart, faBars, faCartPlus, faThLarge, faList } from '@fortawesome/free-solid-svg-icons';
-import womenCollectionsData from '../../../../fakeData/womenCollectionsData';
+import collectionsData from '../../../../fakeData/collectionsData';
 import './WomenCollectionPage.css';
+import { useHistory } from 'react-router-dom';
 const WomenCollectionsPage = () => {
+
+    const {location: {pathname} } = useHistory();
+    const filterData = collectionsData.filter(data => data.type === pathname);
     return (
         <div className="womens-collection-page">
                 <div className="row">
@@ -47,7 +51,7 @@ const WomenCollectionsPage = () => {
                         <div className="container">
                             <div className="row mt-3">
                                 {
-                                    womenCollectionsData.map((card, index) => (
+                                    filterData.map((card, index) => (
                                         <div className="col-12 col-sm-6 col-md-4 product mt-3" key={index}>
                                             <img src={card.img} className="card-img-top" alt="..." />
                                             <div className="card-body product-card">

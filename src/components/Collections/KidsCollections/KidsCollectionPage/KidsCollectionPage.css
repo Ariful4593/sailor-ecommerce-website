@@ -1,5 +1,5 @@
 @media screen and (max-width: 480px){
-    .womens-collection-page{
+    .kids-collection-page{
         max-width: 1180px;
         width: 100%;
         padding-right: var(--bs-gutter-x,.75rem);
@@ -8,7 +8,7 @@
         margin-left: auto;
         margin-top: 60px;
     }
-    .womens-collection-page .main-title{
+    .kids-collection-page .main-title{
         text-align: center;
         color: #4d4d4d;
         text-transform: uppercase;
@@ -106,7 +106,7 @@
     }
 }
 @media screen and (max-width: 768px) and (min-width: 481px){
-    .womens-collection-page{
+    .kids-collection-page{
         max-width: 1180px;
         width: 100%;
         padding-right: var(--bs-gutter-x,.75rem);
@@ -115,7 +115,7 @@
         margin-left: auto;
         margin-top: 60px;
     }
-    .womens-collection-page .main-title{
+    .kids-collection-page .main-title{
         text-align: center;
         color: #4d4d4d;
         text-transform: uppercase;
@@ -213,7 +213,7 @@
     }
 }
 @media screen and (max-width: 1024px) and (min-width: 769px){
-    .womens-collection-page{
+    .kids-collection-page{
         max-width: 1180px;
         width: 100%;
         padding-right: var(--bs-gutter-x,.75rem);
@@ -222,7 +222,7 @@
         margin-left: auto;
         margin-top: 60px;
     }
-    .womens-collection-page .main-title{
+    .kids-collection-page .main-title{
         text-align: center;
         color: #4d4d4d;
         text-transform: uppercase;
@@ -269,6 +269,7 @@
     .grid-layer-area{
         font: 20px 'Khand',sans-serif;
         color: #909090;
+        width: 100%;
     }
     .grid-layer-area .grid{
         margin-left: 25px;
@@ -308,7 +309,7 @@
     }
 }
 @media screen and (min-width: 1025px){
-    .womens-collection-page{
+    .kids-collection-page{
         max-width: 1180px;
         width: 100%;
         padding-right: var(--bs-gutter-x,.75rem);
@@ -317,7 +318,7 @@
         margin-left: auto;
         margin-top: 60px;
     }
-    .womens-collection-page .main-title{
+    .kids-collection-page .main-title{
         text-align: center;
         color: #4d4d4d;
         text-transform: uppercase;
@@ -383,7 +384,7 @@
     }
     .icon-area{
         position: absolute;
-        top: 255px !important;
+        top: 255px;
         z-index: auto;
         display: none;
         padding: 0 !important;
