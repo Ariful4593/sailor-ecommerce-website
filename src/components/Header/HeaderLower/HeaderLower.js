@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import './HeaderLower.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartPlus, faBars, faCog, faUser, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faCartPlus, faBars, faCog, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -17,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 const HeaderLower = () => {
     const classes = useStyles();
     return (
-        <div className="container">
+        <div className="header-lower-area">
             <div className="row" id="search-addCart-area">
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <form className={classes.root} noValidate autoComplete="off">
@@ -39,8 +40,8 @@ const HeaderLower = () => {
                 <div className="col-12 header-low-ul" id="header-one">
                     <ul className="">
                         <li><a href="/">CRAZY DEALS</a></li>
-                        <li><a href="/">MEN</a></li>
-                        <li><a href="/">WOMEN</a></li>
+                        <li><Link to="/crazy-mens-collections">MEN</Link></li>
+                        <li><Link to="/crazy-womens-collections">WOMEN</Link></li>
                         <li><a href="/">KIDS</a></li>
                         <li><a href="/">NEWBORN</a></li>
                     </ul>

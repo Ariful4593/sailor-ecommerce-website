@@ -2,8 +2,8 @@
     box-shadow: 0 4px 6px rgb(150 150 150 / 13%);
 }
 
-@media screen and (min-width: 1024px){
+/* @media screen and (min-width: 1024px){
     .container{
         max-width: 1230px !important;
     }
-}
+} */

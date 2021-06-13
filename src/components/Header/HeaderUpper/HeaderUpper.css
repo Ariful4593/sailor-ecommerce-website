@@ -5,8 +5,22 @@
     max-height: 80px !important;
 }
 @media screen and (min-width: 1025px){
+    .header-upper-area{
+        max-width: 1230px;
+        width: 100%;
+        padding-right: var(--bs-gutter-x,.75rem);
+        padding-left: var(--bs-gutter-x,.75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
     .header-logo{
         width: 33.33% !important;
+    }
+    .navbar-nav{
+        margin-top: auto !important;
+    /* margin-right: auto !important; */
+        margin-bottom: auto !important;
+        margin-left: auto !important;
     }
 
 }

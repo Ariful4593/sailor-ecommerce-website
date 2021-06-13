@@ -1,0 +1,17 @@
+.blog-area{
+    margin-top: 65px !important;
+    max-width: 1000px !important;
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.blog-area .blog-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 7px;
+    margin-bottom: 55px;
+    color: #2b2e43;
+}

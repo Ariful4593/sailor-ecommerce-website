@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
-import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import monsoon from '../../images/slider/monson-sale.png';
 import imageOne from '../../images/slider/slide1.png';

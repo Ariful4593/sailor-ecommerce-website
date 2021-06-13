@@ -1,23 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../images/sailor.png';
-import './HeaderUpper.css'
+import './HeaderUpper.css';
 const HeaderUpper = () => {
     return (
-        <div className="container header pt-4">
+        <div className="header-upper-area pt-4">
             <div className="row">
-                <div className="col-md-4 text-center" id="contact-number">
+                <div className="col-md-4" id="contact-number">
                     <h5 className="">Need Help: +8801777702000</h5>
                 </div>
                 <div className=" header-logo">
-                    <a href="/">
-                        <img className="logo" src={logo} alt="" />
-                    </a>
-
+                    <Link to="/"><img className="logo" src={logo} alt="" /></Link>
                 </div>
                 <div className="col-md-4" id="whishlist-area">
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav m-auto">
+                            <ul className="navbar-nav">
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle font-weight-bold" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Myaccount
