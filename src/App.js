@@ -9,6 +9,7 @@ import MensCollections from './components/Collections/MensCollections/MensCollec
 import WomenCollection from './components/Collections/WomenCollections/WomenCollection';
 import KidsCollections from './components/Collections/KidsCollections/KidsCollections';
 import NewbornCollections from './components/Collections/NewbornCollections/NewbornCollections';
+import SingleProduct from './components/SingleProduct/SingleProduct';
 function App() {
   return (
     <Router>
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path="/newborn">
           <NewbornCollections />
+        </Route>
+        <Route path="/singleProduct/:id">
+          <SingleProduct />
         </Route>
       </Switch>
     </Router>

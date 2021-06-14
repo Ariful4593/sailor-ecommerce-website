@@ -7,8 +7,8 @@ import Blog from '../Blog/Blog';
 import Instagram from '../Instagram/Instagram';
 import NewsLetter from '../NewsLetter/NewsLetter';
 import MensAndWomens from '../MensAndWomens/MensAndWomens';
-import FeaturedProducts from '../FeaturedProducts/FeaturedProducts';
 import BoysAndGirls from '../BoysAndGirls/BoysAndGirls';
+import FeaturedProducts from '../Collections/FeaturedProducts/FeaturedProducts';
 const Home = () => {
     return (
         <div>

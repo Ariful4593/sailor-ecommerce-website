@@ -374,6 +374,7 @@
     /* Hover icon area */
     .product{
         position: relative;
+        cursor: pointer;
     }
     .product:hover .icon-area{
         display: block;
@@ -398,5 +399,13 @@
     }
     .icon-area li:hover{
         background: #D02027;
+    }
+    .product a{
+        text-decoration: none;
+        color: #454545;
+    }
+    .product a:hover{
+        text-decoration: none;
+        color: #454545;
     }
 }

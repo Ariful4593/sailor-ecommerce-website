@@ -20,10 +20,10 @@
           position: relative;
           width: 100% !important;
       }
-      .icon-area{
+      .featured-icon-area{
           display: none;
       }
-      .icon-area li{
+      .featured-icon-area li{
         float: left;
         padding: 15px;
         background: white;
@@ -31,7 +31,7 @@
         list-style-type: none;
         color: darkgray;
       }
-      .icon-area li:hover{
+      .featured-icon-area li:hover{
         background: #D02027;
       }
   }
@@ -58,10 +58,10 @@
           width: 50% !important;
       }
       
-      .icon-area{
+      .featured-icon-area{
           display: none;
       }
-    .icon-area li{
+    .featured-icon-area li{
         float: left;
         padding: 15px;
         background: white;
@@ -69,7 +69,7 @@
         list-style-type: none;
         color: darkgray;
     }
-    .icon-area li:hover{
+    .featured-icon-area li:hover{
         background: #D02027;
     }
   }
@@ -88,10 +88,10 @@
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
     }
-    .icon-area{
+    .featured-icon-area{
         display: none !important;
     }
-    .icon-area li{
+    .featured-icon-area li{
         float: left;
         padding: 15px;
         background: white;
@@ -99,7 +99,7 @@
         list-style-type: none;
         color: darkgray;
     }
-    .icon-area li:hover{
+    .featured-icon-area li:hover{
         background: #D02027;
     }
   }
@@ -121,19 +121,19 @@
     .product{
         position: relative;
     }
-    .product:hover .icon-area{
+    .product:hover .featured-icon-area{
         display: block;
     }
-    .product:hover .icon-area li{
+    .product:hover .featured-icon-area li{
         cursor: pointer;
     }
-    .icon-area{
+    .featured-icon-area{
         position: absolute !important;
         top: 380px !important;
         z-index: 100 !important;
         display: none;
     }
-    .icon-area li{
+    .featured-icon-area li{
         float: left;
         padding: 15px;
         background: white;
@@ -141,7 +141,7 @@
         list-style-type: none;
         color: darkgray;
     }
-    .icon-area li:hover{
+    .featured-icon-area li:hover{
         background: #D02027;
     }
   }

@@ -1,0 +1,93 @@
+.overview .name{
+    font-size: 25px;
+    color: #454545;
+    text-align: left;
+    font-family: 'Barlow',sans-serif;
+}
+.size-attributes ul{
+    margin: 0;
+    padding: 0 !important;
+}
+.size-attributes span{
+    margin-right: 5px;
+    cursor: pointer;
+}
+.add-to-cart button{
+    border: none;
+    padding: 15px 35px;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #2e2e2e;
+}
+.increment-decrement-area input{
+    width: 60px;
+    height: 38px;
+    padding: 12px;
+    text-align: center;
+    font: normal 14px 'Khand',sans-serif;
+    color: #909090;
+}
+.add-to-cart button:hover{
+    background: #d02027;
+}
+.whishlist-area{
+    margin-top: 30px;
+}
+.list-area{
+    
+    background: none;
+    padding: 5px 5px 5px 24px;
+    color: #909090;
+    font-size: 15px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 0;
+}
+.fa {
+    padding: 13px;
+    font-size: 30px;
+    width: 70px;
+    height: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .social-media-area a{
+      text-decoration: none;
+  }
+  .flip{
+      color: #d02027;
+      background: white;
+      border: 4px double #f1f1f1;
+      transform: translateZ(19px);
+  }

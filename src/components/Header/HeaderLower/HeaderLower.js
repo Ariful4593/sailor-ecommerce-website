@@ -41,7 +41,7 @@ const HeaderLower = () => {
                     <ul className="">
                         <li><a href="/">CRAZY DEALS</a></li>
                         <li><Link to="/mens">MEN</Link></li>
-                    <li><Link to="/womens">WOMEN</Link></li>
+                        <li><Link to="/womens">WOMEN</Link></li>
                         <li><Link to="/kids">KIDS</Link></li>
                         <li><Link to="/newborn">NEWBORN</Link></li>
                     </ul>
