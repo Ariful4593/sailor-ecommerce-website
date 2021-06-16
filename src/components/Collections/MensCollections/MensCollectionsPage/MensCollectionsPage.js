@@ -1,12 +1,14 @@
 import React from 'react';
 import './MensCollectionsPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faHeart, faBars, faCartPlus, faThLarge, faList } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faHeart, faBars, faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import collectionsData from '../../../../fakeData/collectionsData';
 import { useHistory } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import GridArea from '../../GridArea/GridArea';
 const MensCollectionsPage = () => {
 
-    const {location: {pathname} } = useHistory();
+    const { location: { pathname } } = useHistory();
     const filterData = collectionsData.filter(data => data.type === pathname);
     return (
         <div className="mens-collection-page">
@@ -19,52 +21,26 @@ const MensCollectionsPage = () => {
                     <strong>RECENTLY VIEWED PRODUCTS</strong>
                 </div>
                 <div className="col-md-9 grid-main-area">
-                    <div className="container">
-                        <div className="row product-selectors">
-                            <div className="col-md-4">
-                                <pre><span>Display</span> <select name="display" id="displayCard">
-                                    <option value="9">9</option>
-                                    <option value="18">18</option>
-                                    <option value="27">27</option>
-                                    <option value="36">36</option>
-                                </select>  <span>Per Page</span>
-                                </pre>
-                            </div>
-                            <div className="col-md-4 grid-layer-area">
-                                <pre><span>View As </span> <button className="grid"><FontAwesomeIcon icon={faThLarge} /></button> <button className="list"><FontAwesomeIcon icon={faList} /></button></pre>
-                            </div>
-                            <div className="col-md-4 sort-element">
-                                <pre><span>Sort By  </span>
-                                    <select name="sortList" id="sortBy">
-                                        <option value="Newest">Newest</option>
-                                        <option value="Position">Position</option>
-                                        <option value="Name: A to Z">Name: A to Z</option>
-                                        <option value="Name: Z to A">Name: Z to A</option>
-                                        <option value="Price: Low to High">Price: Low to High</option>
-                                        <option value="Price: High to Low">Price: High to Low</option>
-                                    </select>
-                                </pre>
-                            </div>
-                        </div>
-                    </div>
-
+                    <GridArea/>
                     <div className="container">
                         <div className="row mt-3">
                             {
                                 filterData.map((card, index) => (
                                     <div className="col-12 col-sm-6 col-md-4 product mt-3" key={index}>
-                                        <img src={card.img} className="card-img-top" alt="..." />
-                                        <div className="card-body product-card">
-                                            <h5 className="card-title">{card.title}</h5>
-                                            <p className="card-text text-danger font-weight-bold">{card.price}</p>
-                                        </div>
+                                        <Link to={`/singleProduct/${card.id}`}>
+                                            <img src={card.img} className="card-img-top" alt="..." />
+                                            <div className="card-body product-card">
+                                                <h5 className="card-title">{card.title}</h5>
+                                                <p className="card-text text-danger font-weight-bold">{card.price}</p>
+                                            </div>
 
-                                        <ul className="icon-area">
-                                            <li><FontAwesomeIcon icon={faEye} /></li>
-                                            <li><FontAwesomeIcon icon={faHeart} /></li>
-                                            <li><FontAwesomeIcon icon={faBars} /></li>
-                                            <li><FontAwesomeIcon icon={faCartPlus} /></li>
-                                        </ul>
+                                            <ul className="icon-area">
+                                                <li><FontAwesomeIcon icon={faEye} /></li>
+                                                <li><FontAwesomeIcon icon={faHeart} /></li>
+                                                <li><FontAwesomeIcon icon={faBars} /></li>
+                                                <li><FontAwesomeIcon icon={faCartPlus} /></li>
+                                            </ul>
+                                        </Link>
                                     </div>
                                 ))
 

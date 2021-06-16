@@ -5,19 +5,38 @@ import { useParams } from 'react-router-dom';
 import collectionsData from '../../../fakeData/collectionsData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCog, faAddressCard, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import ReactImageMagnify from 'react-image-magnify';
+
+
 const SingleProductPage = () => {
     const { id } = useParams();
-    const sigleProduct = collectionsData.filter(data => data.id === id);
+    const singleProduct = collectionsData.filter(data => data.id === id);
 
     return (
         <div className="container overview">
             {
-                sigleProduct.map((data, index) => (
-                    <div className="row mt-5" key={index}>
-                        <div className="col-md-6" >
-                            <img src={data.img} alt="" />
+                singleProduct.map((data, index) => (
+                    <div className="row mt-5 " key={index}>
+                        <div className="col-md-6 single-product">
+                            <ReactImageMagnify 
+                             className="magnify"
+                            {...{
+                                smallImage: {
+                                    alt: 'Wristwatch by Ted Baker London',
+                                    isFluidWidth: true,
+                                    src: data.img,
+                                    
+                                },
+                                largeImage: {
+                                    src: data.img,
+                                    width: 1200,
+                                    height: 1800,
+                                    
+                                }
+                            }} />
+                            {/* <img className="w-100" src={data.img} alt="" /> */}
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 single-product ">
                             <h1 className="name">{data.title}</h1>
                             <p className="price"><strong>Price: </strong>{data.price}</p>
                             <label htmlFor="">Size: </label>
@@ -30,7 +49,7 @@ const SingleProductPage = () => {
                             </div>
                             <hr />
                             <div className="increment-decrement-area">
-                                <input type="text" className="text-center" name=""  id="" /> <button className="btn btn-danger">+</button> <button className="btn btn-danger">-</button>
+                                <input type="text" className="text-center" name="" id="" /> <button className="btn btn-danger">+</button> <button className="btn btn-danger">-</button>
                             </div>
                             <div className="add-to-cart mt-4">
                                 <button type="submit">ADD TO CART</button>
@@ -58,7 +77,6 @@ const SingleProductPage = () => {
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 ))
             }

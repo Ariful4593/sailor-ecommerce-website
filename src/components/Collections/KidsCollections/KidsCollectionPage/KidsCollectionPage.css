@@ -48,34 +48,6 @@
         border-bottom: 4px double #f1f1f1;
     }
 
-    /* Selectors and Grid area */
-    .product-selectors{
-        text-align: center;
-        font: 14px 'Khand',sans-serif;
-        color: #909090;
-        border-bottom: 4px double #f1f1f1;
-    }
-    .product-selectors select{
-        margin-top: 12px;
-    }
-    .product-selectors span{
-        display: inline-block;
-        line-height: 40px;
-        font-size: 18px;    
-    }
-    .grid-layer-area{
-        font: 20px 'Khand',sans-serif;
-        color: #909090;
-        width: 100%;
-    }
-    .grid-layer-area .grid{
-        margin-left: 25px;
-    }
-    .sort-element span{
-        font-size: 21px !important;
-    }
-
-
     /* Hover icon area */
     .product{
         position: relative;
@@ -155,34 +127,7 @@
         letter-spacing: 3px;
     }
 
-    /* Selectors and Grid area */
-    .product-selectors{
-        text-align: center;
-        font: 14px 'Khand',sans-serif;
-        color: #909090;
-        border-bottom: 4px double #f1f1f1;
-    }
-    .product-selectors select{
-        margin-top: 12px;
-    }
-    .product-selectors span{
-        display: inline-block;
-        line-height: 40px;
-        font-size: 18px;    
-    }
-    .grid-layer-area{
-        font: 20px 'Khand',sans-serif;
-        color: #909090;
-        width: 100%;
-    }
-    .grid-layer-area .grid{
-        margin-left: 25px;
-    }
-    .sort-element span{
-        font-size: 21px !important;
-    }
-
-
+    
     /* Hover icon area */
     .product{
         position: relative;
@@ -251,32 +196,6 @@
         letter-spacing: 3px;
     }
 
-    /* Selectors and Grid area */
-    .product-selectors{
-        text-align: center;
-        font: 14px 'Khand',sans-serif;
-        color: #909090;
-        border-bottom: 4px double #f1f1f1;
-    }
-    .product-selectors select{
-        margin-top: 12px;
-    }
-    .product-selectors span{
-        display: inline-block;
-        line-height: 40px;
-        font-size: 18px;    
-    }
-    .grid-layer-area{
-        font: 20px 'Khand',sans-serif;
-        color: #909090;
-        width: 100%;
-    }
-    .grid-layer-area .grid{
-        margin-left: 25px;
-    }
-    .sort-element span{
-        font-size: 21px !important;
-    }
 
 
     /* Hover icon area */
@@ -343,32 +262,6 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         border-bottom: 4px double #f1f1f1;
-    }
-
-    /* Selectors and Grid area */
-    .product-selectors{
-        text-align: center;
-        font: 14px 'Khand',sans-serif;
-        color: #909090;
-        border-bottom: 4px double #f1f1f1;
-    }
-    .product-selectors select{
-        margin-top: 12px;
-    }
-    .product-selectors span{
-        display: inline-block;
-        line-height: 40px;
-        font-size: 18px;    
-    }
-    .grid-layer-area{
-        font: 20px 'Khand',sans-serif;
-        color: #909090;
-    }
-    .grid-layer-area .grid{
-        margin-left: 25px;
-    }
-    .sort-element span{
-        font-size: 21px !important;
     }
 
 
