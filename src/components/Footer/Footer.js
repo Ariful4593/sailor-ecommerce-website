@@ -30,7 +30,7 @@ const Footer = () => {
                                 <h3 className="list-title">{items.title}</h3>
                                 {
                                     items.listItem.map((listData, index) => (
-                                        <p className="m-0" key={index}>{listData}</p>
+                                        <p className="m-0" style={{cursor: 'pointer'}} key={index}>{listData}</p>
                                     ))
                                 }
                             </div>

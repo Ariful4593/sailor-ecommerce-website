@@ -1,29 +1,141 @@
-pre{
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
+@media screen and (max-width: 480px){
+    pre{
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+    .product-selectors{
+        text-align: center;
+        font: 14px 'Khand',sans-serif;
+        color: #909090;
+        border-bottom: 4px double #f1f1f1;
+        display: none !important;
+    }
+    .product-selectors select{
+        margin-top: 12px;
+    }
+    .product-selectors span{
+        display: inline-block;
+        line-height: 40px;
+        font-size: 18px;    
+    }
+    .grid-layer-area{
+        font: 20px 'Khand',sans-serif;
+        color: #909090;
+    }
+    .grid-layer-area .grid{
+        margin-left: 25px;
+        border: 1px solid sienna
+    }
+    .grid-layer-area .list{
+        border: 1px solid sienna
+    }
+    .sort-element span{
+        font-size: 21px !important;
+    }
 }
-.product-selectors{
-    text-align: center;
-    font: 14px 'Khand',sans-serif;
-    color: #909090;
-    border-bottom: 4px double #f1f1f1;
+@media screen and (max-width: 768px) and (min-width: 481px){
+    pre{
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+    .product-selectors{
+        text-align: center;
+        font: 14px 'Khand',sans-serif;
+        color: #909090;
+        border-bottom: 4px double #f1f1f1;
+    }
+    .product-selectors select{
+        margin-top: 12px;
+    }
+    .product-selectors span{
+        display: inline-block;
+        line-height: 40px;
+        font-size: 18px;    
+    }
+    .grid-layer-area{
+        font: 20px 'Khand',sans-serif;
+        color: #909090;
+    }
+    .grid-layer-area .grid{
+        margin-left: 25px;
+        border: 1px solid sienna
+    }
+    .grid-layer-area .list{
+        border: 1px solid sienna
+    }
+    .sort-element span{
+        font-size: 21px !important;
+    }
 }
-.product-selectors select{
-    margin-top: 12px;
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    pre{
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+    .product-selectors{
+        text-align: center;
+        font: 14px 'Khand',sans-serif;
+        color: #909090;
+        border-bottom: 4px double #f1f1f1;
+    }
+    .product-selectors select{
+        margin-top: 12px;
+    }
+    .product-selectors span{
+        display: inline-block;
+        line-height: 40px;
+        font-size: 18px;    
+    }
+    .grid-layer-area{
+        font: 20px 'Khand',sans-serif;
+        color: #909090;
+    }
+    .grid-layer-area .grid{
+        margin-left: 25px;
+        border: 1px solid sienna
+    }
+    .grid-layer-area .list{
+        border: 1px solid sienna
+    }
+    .sort-element span{
+        font-size: 21px !important;
+    }
 }
-.product-selectors span{
-    display: inline-block;
-    line-height: 40px;
-    font-size: 18px;    
-}
-.grid-layer-area{
-    font: 20px 'Khand',sans-serif;
-    color: #909090;
-}
-.grid-layer-area .grid{
-    margin-left: 25px;
-}
-.sort-element span{
-    font-size: 21px !important;
+@media screen and (min-width: 1025px){
+    pre{
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+    .product-selectors{
+        text-align: center;
+        font: 14px 'Khand',sans-serif;
+        color: #909090;
+        border-bottom: 4px double #f1f1f1;
+    }
+    .product-selectors select{
+        margin-top: 12px;
+    }
+    .product-selectors span{
+        display: inline-block;
+        line-height: 40px;
+        font-size: 18px;    
+    }
+    .grid-layer-area{
+        font: 20px 'Khand',sans-serif;
+        color: #909090;
+    }
+    .grid-layer-area .grid{
+        margin-left: 25px;
+        border: 1px solid sienna
+    }
+    .grid-layer-area .list{
+        border: 1px solid sienna
+    }
+    .sort-element span{
+        font-size: 21px !important;
+    }
 }

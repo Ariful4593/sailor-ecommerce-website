@@ -79,6 +79,14 @@
     .icon-area li:hover{
         background: #D02027;
     }
+    .product a{
+        text-decoration: none;
+        color: #454545;
+    }
+    .product a:hover{
+        text-decoration: none;
+        color: #454545;
+    }
 }
 @media screen and (max-width: 768px) and (min-width: 481px){
     .womens-collection-page{
@@ -161,6 +169,14 @@
     .icon-area li:hover{
         background: #D02027;
     }
+    .product a{
+        text-decoration: none;
+        color: #454545;
+    }
+    .product a:hover{
+        text-decoration: none;
+        color: #454545;
+    }
 }
 @media screen and (max-width: 1024px) and (min-width: 769px){
     .womens-collection-page{
@@ -231,6 +247,14 @@
     }
     .icon-area li:hover{
         background: #D02027;
+    }
+    .product a{
+        text-decoration: none;
+        color: #454545;
+    }
+    .product a:hover{
+        text-decoration: none;
+        color: #454545;
     }
 }
 @media screen and (min-width: 1025px){

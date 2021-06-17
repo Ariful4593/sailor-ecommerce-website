@@ -5,6 +5,9 @@ import './HeaderLower.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartPlus, faBars, faCog, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import { getDatabaseCart } from '../../../utilities/databaseManager';
+
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -17,6 +20,12 @@ const useStyles = makeStyles((theme) => ({
 
 const HeaderLower = () => {
     const classes = useStyles();
+    const cardIndex = getDatabaseCart();
+    let key, count = 0;
+    for (key in cardIndex) {
+        if (cardIndex.hasOwnProperty(key))
+            count++;
+    }
     return (
         <div className="header-lower-area">
             <div className="row" id="search-addCart-area">
@@ -31,7 +40,7 @@ const HeaderLower = () => {
 
                     <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
 
-                        <a className="navbar-brand" href="/"><FontAwesomeIcon icon={faCartPlus} /> ADD CART </a>
+                        <Link className="navbar-brand" to="/cart"><FontAwesomeIcon icon={faCartPlus} /> TOTAL CART {`(${count})`}</Link>
                     </div>
                 </nav>
             </div>
@@ -48,11 +57,11 @@ const HeaderLower = () => {
                 </div>
                 <div className="col-12 header-low-ul" id="nav-icon-area">
                     <ul className="">
-                        <li><a href="/"><FontAwesomeIcon icon={faBars} /></a></li>
-                        <li><a href="/"><FontAwesomeIcon icon={faCog} /></a></li>
-                        <li><a href="/"><FontAwesomeIcon icon={faUser} /></a></li>
-                        <li><a href="/"><FontAwesomeIcon icon={faSearch} /></a></li>
-                        <li><a href="/"><FontAwesomeIcon icon={faCartPlus} /></a></li>
+                        <li><Link to="/"><FontAwesomeIcon icon={faBars} /></Link></li>
+                        <li><Link to="/mens"><FontAwesomeIcon icon={faCog} /></Link></li>
+                        <li><Link to="/kids"><FontAwesomeIcon icon={faUser} /></Link></li>
+                        <li><Link to="/newborn"><FontAwesomeIcon icon={faSearch} /></Link></li>
+                        <li><Link to="/cart"><FontAwesomeIcon icon={faCartPlus} /></Link></li>
                     </ul>
                 </div>
             </div>

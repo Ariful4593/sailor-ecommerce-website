@@ -291,4 +291,7 @@
     .icon-area li:hover{
         background: #D02027;
     }
+    .list-product-area{
+        margin-bottom: 50px;
+    }
 }
